@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="1" failures="0" hostname="BouDjy" id="0" name="TestShape" package="fr.ubo.tetris" skipped="0" tests="1" time="0.0" timestamp="2021-10-06T16:49:36">
+      <properties>
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="ivy.retrieve.pattern.ivy.instance" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/lib/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="java.vendor.url.ivy.instance" value="http://java.oracle.com/" />
+
+          <property name="ivy.local.default.ivy.pattern.ivy.instance" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
+
+          <property name="ivy.project.dir.ivy.instance" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab" />
+
+          <property name="ivy.resolve.default.type.filter" value="*" />
+
+          <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_301\jre" />
+
+          <property name="ivy.configurations.ivy.instance" value="*" />
+
+          <property name="ivy.basedir.ivy.instance" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab" />
+
+          <property name="ivy.dep.file.ivy.instance" value="ivy.xml" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\endorsed" />
+
+          <property name="java.class.path.ivy.instance" value="D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-launcher.jar;C:\Users\ayman\.ant\lib\hamcrest-core-1.3.jar;C:\Users\ayman\.ant\lib\ivy-2.4.0.jar;C:\Users\ayman\.ant\lib\junit-4.12.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-antlr.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-bcel.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-bsf.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-log4j.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-oro.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-regexp.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-resolver.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-xalan2.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-commons-logging.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-commons-net.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-imageio.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-jai.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-javamail.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-jdepend.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-jmf.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-jsch.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-junit.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-junit4.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-junitlauncher.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-launcher.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-netrexx.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-swing.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-testutil.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-xz.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ivy-2.4.0.jar;C:\Program Files\Java\jdk1.8.0_301\lib\tools.jar" />
+
+          <property name="ivy.home" value="C:\Users\ayman\.ivy2" />
+
+          <property name="src.dir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/src" />
+
+          <property name="java.vm.specification.vendor.ivy.instance" value="Oracle Corporation" />
+
+          <property name="sun.os.patch.level" value="" />
+
+          <property name="ivy.dep.file" value="ivy.xml" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="ivy.local.default.artifact.pattern.ivy.instance" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
+
+          <property name="ivy.lib.dir.ivy.instance" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/lib" />
+
+          <property name="java.version" value="1.8.0_301" />
+
+          <property name="sun.stdout.encoding" value="cp850" />
+
+          <property name="ivy.conf.dir.ivy.instance" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings" />
+
+          <property name="bin.dir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/bin" />
+
+          <property name="sun.boot.library.path.ivy.instance" value="C:\Program Files\Java\jdk1.8.0_301\jre\bin" />
+
+          <property name="ivy.report.output.pattern.ivy.instance" value="[organisation]-[module]-[conf].[ext]" />
+
+          <property name="ivy.module" value="ivy-exemple" />
+
+          <property name="ivy.publish.src.artifacts.pattern.ivy.instance" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="sun.management.compiler.ivy.instance" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+          <property name="ivy.local.default.artifact.pattern" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
+
+          <property name="os.name.ivy.instance" value="Windows 10" />
+
+          <property name="ivy.default.ivy.user.dir.ivy.instance" value="C:\Users\ayman\.ivy2" />
+
+          <property name="ivy.default.always.check.exact.revision" value="false" />
+
+          <property name="ivy.default.settings.dir.ivy.instance" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings" />
+
+          <property name="user.name" value="ayman" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="ivy.shared.default.root.ivy.instance" value="C:\Users\ayman\.ivy2/shared" />
+
+          <property name="sun.jnu.encoding" value="Cp1252" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="ant.home.ivy.instance" value="D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946" />
+
+          <property name="file.encoding.ivy.instance" value="Cp1252" />
+
+          <property name="ivy.cache.ttl.default.ivy.instance" value="10s" />
+
+          <property name="java.specification.vendor.ivy.instance" value="Oracle Corporation" />
+
+          <property name="java.vendor.ivy.instance" value="Oracle Corporation" />
+
+          <property name="lib.dir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/lib" />
+
+          <property name="sun.cpu.isalist.ivy.instance" value="amd64" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="java.endorsed.dirs.ivy.instance" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\endorsed" />
+
+          <property name="user.script" value="" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.class.version.ivy.instance" value="52.0" />
+
+          <property name="ivy.default.conf.dir" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings" />
+
+          <property name="file.encoding" value="Cp1252" />
+
+          <property name="java.runtime.name.ivy.instance" value="Java(TM) SE Runtime Environment" />
+
+          <property name="ivy.resolve.default.type.filter.ivy.instance" value="*" />
+
+          <property name="ant.project.default-target" value="dist" />
+
+          <property name="ivy.targets.copied" value="true" />
+
+          <property name="ivy.parents.count" value="0" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher all" />
+
+          <property name="ivy.shared.default.artifact.pattern" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
+
+          <property name="ant.file" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab\build.xml" />
+
+          <property name="ivy.distrib.dir.ivy.instance" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/distrib" />
+
+          <property name="ivy.checksums.ivy.instance" value="sha1,md5" />
+
+          <property name="ant.file.Compilation de Tetris" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab\build.xml" />
+
+          <property name="sun.arch.data.model.ivy.instance" value="64" />
+
+          <property name="ivy.build.artifacts.dir.ivy.instance" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/build/artifacts" />
+
+          <property name="user.variant.ivy.instance" value="" />
+
+          <property name="ivy.settings.file" value="ivysettings.xml" />
+
+          <property name="java.io.tmpdir" value="C:\Users\ayman\AppData\Local\Temp\" />
+
+          <property name="ivy.buildlist.ivyfilepath.ivy.instance" value="ivy.xml" />
+
+          <property name="ivy.cache.ttl.default" value="10s" />
+
+          <property name="user.language" value="en" />
+
+          <property name="user.dir.ivy.instance" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab" />
+
+          <property name="ivy.home.ivy.instance" value="C:\Users\ayman\.ivy2" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.specification.version.ivy.instance" value="1.8" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="ivy.build.artifacts.dir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/build/artifacts" />
+
+          <property name="ivy.settings.dir.url" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings" />
+
+          <property name="report.dir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/test-reports" />
+
+          <property name="sun.io.unicode.encoding.ivy.instance" value="UnicodeLittle" />
+
+          <property name="ivy.status" value="integration" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ivy.lib.dir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/lib" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="version" value="1.69" />
+
+          <property name="ivy.default.conf.dir.ivy.instance" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings" />
+
+          <property name="java.vm.version.ivy.instance" value="25.301-b09" />
+
+          <property name="compile.classpath" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/lib/commons-lang3-3.5.jar" />
+
+          <property name="user.name.ivy.instance" value="ayman" />
+
+          <property name="ivy.cache.dir" value="C:\Users\ayman\.ivy2\cache" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="java.io.tmpdir.ivy.instance" value="C:\Users\ayman\AppData\Local\Temp\" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.10.9 compiled on September 27 2020" />
+
+          <property name="java.home.ivy.instance" value="C:\Program Files\Java\jdk1.8.0_301\jre" />
+
+          <property name="java.vm.vendor.ivy.instance" value="Oracle Corporation" />
+
+          <property name="user.script.ivy.instance" value="" />
+
+          <property name="ivy.default.settings.dir" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings" />
+
+          <property name="ivy.configurations" value="*" />
+
+          <property name="ivy.settings.url" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml" />
+
+          <property name="os.name" value="Windows 10" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="sun.jnu.encoding.ivy.instance" value="Cp1252" />
+
+          <property name="ivy.deliver.ivy.pattern.ivy.instance" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="ivy.checksums" value="sha1,md5" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="ivy.log.modules.in.use" value="false" />
+
+          <property name="java.runtime.version.ivy.instance" value="1.8.0_301-b09" />
+
+          <property name="ivy.report.output.pattern" value="[organisation]-[module]-[conf].[ext]" />
+
+          <property name="ivy.version" value="2.4.0" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_301\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Oculus\Support\oculus-runtime;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\Softwares\Git\cmd;D:\Softwares\Git\mingw64\bin;D:\Softwares\Git\usr\bin;C:\Program Files\Java\jre1.8.0_281\bin;D:\Softwares\wamp\bin\mysql\mysql8.0.18\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\HP\IdrsOCR_15.2.10.1114\;C:\Users\ayman\AppData\Local\Programs\Microsoft VS Code;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\bin;;." />
+
+          <property name="ivy.conf.url" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml" />
+
+          <property name="java.vm.name.ivy.instance" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="os.version.ivy.instance" value="10.0" />
+
+          <property name="line.separator.ivy.instance" value="&#xd;&#xa;" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="sun.desktop.ivy.instance" value="windows" />
+
+          <property name="sun.cpu.endian.ivy.instance" value="little" />
+
+          <property name="java.vm.specification.name.ivy.instance" value="Java Virtual Machine Specification" />
+
+          <property name="basedir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="ivy.settings.url.ivy.instance" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml" />
+
+          <property name="path.separator.ivy.instance" value=";" />
+
+          <property name="sun.boot.class.path.ivy.instance" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_301\jre\classes" />
+
+          <property name="ant.home" value="D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946" />
+
+          <property name="ivy.resolved.configurations" value="default" />
+
+          <property name="ivy.deliver.ivy.pattern" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\bin" />
+
+          <property name="ivy.default.always.check.exact.revision.ivy.instance" value="false" />
+
+          <property name="java.library.path.ivy.instance" value="C:\Program Files\Java\jdk1.8.0_301\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Oculus\Support\oculus-runtime;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\Softwares\Git\cmd;D:\Softwares\Git\mingw64\bin;D:\Softwares\Git\usr\bin;C:\Program Files\Java\jre1.8.0_281\bin;D:\Softwares\wamp\bin\mysql\mysql8.0.18\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\HP\IdrsOCR_15.2.10.1114\;C:\Users\ayman\AppData\Local\Programs\Microsoft VS Code;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\bin;;." />
+
+          <property name="awt.toolkit.ivy.instance" value="sun.awt.windows.WToolkit" />
+
+          <property name="ivy.basedir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="java.ext.dirs.ivy.instance" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="user.variant" value="" />
+
+          <property name="ivy.log.modules.in.use.ivy.instance" value="false" />
+
+          <property name="main-class" value="fr.ubo.tetris.Tetris" />
+
+          <property name="ivy.settings.dir.url.ivy.instance" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings" />
+
+          <property name="sun.os.patch.level.ivy.instance" value="" />
+
+          <property name="file.encoding.pkg.ivy.instance" value="sun.io" />
+
+          <property name="ivy.shared.default.ivy.pattern" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
+
+          <property name="ivy.resolver.default.check.modified" value="false" />
+
+          <property name="ivy.settings.file.ivy.instance" value="ivysettings.xml" />
+
+          <property name="ivy.nb.targets.copied" value="3" />
+
+          <property name="ant.project.name" value="Compilation de Tetris" />
+
+          <property name="ivy.cache.dir.ivy.instance" value="C:\Users\ayman\.ivy2\cache" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="ivy.status.ivy.instance" value="integration" />
+
+          <property name="ant.file.type.Compilation de Tetris" value="file" />
+
+          <property name="doc.dir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/javadoc" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="sun.cpu.isalist" value="amd64" />
+
+          <property name="sun.stderr.encoding" value="cp850" />
+
+          <property name="file.separator.ivy.instance" value="\" />
+
+          <property name="ivy.deps.changed" value="false" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+
+          <property name="ivy.local.default.root.ivy.instance" value="C:\Users\ayman\.ivy2/local" />
+
+          <property name="os.version" value="10.0" />
+
+          <property name="user.home" value="C:\Users\ayman" />
+
+          <property name="sun.java.launcher.ivy.instance" value="SUN_STANDARD" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="ivy.local.default.root" value="C:\Users\ayman\.ivy2/local" />
+
+          <property name="ivy.organisation" value="fr.ubo" />
+
+          <property name="user.dir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab" />
+
+          <property name="ant.library.dir.ivy.instance" value="D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib" />
+
+          <property name="ivy.local.default.ivy.pattern" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
+
+          <property name="ivy.shared.default.ivy.pattern.ivy.instance" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
+
+          <property name="java.vm.info.ivy.instance" value="mixed mode" />
+
+          <property name="ivy.publish.src.artifacts.pattern" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="test.dir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/test" />
+
+          <property name="sun.java.command.ivy.instance" value="org.apache.tools.ant.launch.Launcher all" />
+
+          <property name="ivy.distrib.dir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/distrib" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="ivy.revision" value="working@BouDjy" />
+
+          <property name="user.timezone.ivy.instance" value="Europe/Paris" />
+
+          <property name="java.vm.version" value="25.301-b09" />
+
+          <property name="java.class.path" value="D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-launcher.jar;C:\Users\ayman\.ant\lib\hamcrest-core-1.3.jar;C:\Users\ayman\.ant\lib\ivy-2.4.0.jar;C:\Users\ayman\.ant\lib\junit-4.12.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-antlr.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-bcel.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-bsf.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-log4j.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-oro.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-regexp.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-resolver.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-apache-xalan2.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-commons-logging.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-commons-net.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-imageio.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-jai.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-javamail.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-jdepend.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-jmf.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-jsch.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-junit.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-junit4.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-junitlauncher.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-launcher.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-netrexx.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-swing.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-testutil.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant-xz.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant.jar;D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ivy-2.4.0.jar;C:\Program Files\Java\jdk1.8.0_301\lib\tools.jar" />
+
+          <property name="sun.stderr.encoding.ivy.instance" value="cp850" />
+
+          <property name="ivy.default.ivy.user.dir" value="C:\Users\ayman\.ivy2" />
+
+          <property name="user.home.ivy.instance" value="C:\Users\ayman" />
+
+          <property name="basedir.ivy.instance" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab" />
+
+          <property name="ant.library.dir" value="D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.awt.graphicsenv.ivy.instance" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="java.vendor.url.bug.ivy.instance" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="java.vm.specification.version.ivy.instance" value="1.8" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="java.awt.printerjob.ivy.instance" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="ivy.settings.dir.ivy.instance" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings" />
+
+          <property name="ivy.resolver.default.check.modified.ivy.instance" value="false" />
+
+          <property name="ant.core.lib" value="D:\Softwares\eclipse\plugins\org.apache.ant_1.10.9.v20201106-1946\lib\ant.jar" />
+
+          <property name="ivy.settings.dir" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="user.language.ivy.instance" value="en" />
+
+          <property name="ivy.shared.default.artifact.pattern.ivy.instance" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
+
+          <property name="user.country.ivy.instance" value="GB" />
+
+          <property name="ivy.conf.url.ivy.instance" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml" />
+
+          <property name="java.runtime.version" value="1.8.0_301-b09" />
+
+          <property name="java.specification.name.ivy.instance" value="Java Platform API Specification" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_301\jre\classes" />
+
+          <property name="ivy.conf.dir" value="jar:file:/C:/Users/ayman/.ant/lib/ivy-2.4.0.jar!/org/apache/ivy/core/settings" />
+
+          <property name="ivy.retrieve.pattern" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab/lib/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="user.country" value="GB" />
+
+          <property name="ivy.shared.default.root" value="C:\Users\ayman\.ivy2/shared" />
+
+          <property name="java.version.ivy.instance" value="1.8.0_301" />
+
+          <property name="ivy.resolved.file" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab\ivy.xml" />
+
+          <property name="sun.stdout.encoding.ivy.instance" value="cp850" />
+
+          <property name="os.arch.ivy.instance" value="amd64" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="ivy.project.dir" value="D:\M2 - DOSI\PIC - M.Yannick\TPs\TP_GitLab\tp_gitlab" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="ivy.buildlist.ivyfilepath" value="ivy.xml" />
+
+      </properties>
+
+      <error message="fr.ubo.tetris.TestShape" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: fr.ubo.tetris.TestShape
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+</error>
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>

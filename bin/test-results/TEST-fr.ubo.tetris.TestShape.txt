@@ -1,0 +1,13 @@
+Testsuite: fr.ubo.tetris.TestShape
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+
+	Caused an ERROR
+fr.ubo.tetris.TestShape
+java.lang.ClassNotFoundException: fr.ubo.tetris.TestShape
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+
