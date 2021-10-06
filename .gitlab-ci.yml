@@ -27,6 +27,7 @@ test-job:   # This job runs in the test stage.
     - ant test-reports
 
 doc-job:   # This job also runs in the test stage.
+  image: openjdk:8
   stage: docs    # It can run at the same time as unit-test-job (in parallel).
   script:
     - echo "documentation generation..."
