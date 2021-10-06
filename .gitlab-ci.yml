@@ -1,7 +1,11 @@
 before_script:
   - apt-get update
   - apt-get -y install ant
-
+  - git clone https://git-wip-us.apache.org/repos/asf/ant-ivy.git
+  - cd ant-ivy
+  - ant jar
+  - cp ./build/artifact/jars/ivy.jar ${HOME}/.ant/lib
+  - cd ../
 stages:        # List of stages for jobs, and their order of execution
   - .pre
   - build
