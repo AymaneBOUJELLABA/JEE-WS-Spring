@@ -74,13 +74,13 @@
 	</target>
 	
 	<!-- compiler les fichier test -->
-	<target name="compile-test" depends="retrieve">
+	<target name="compile-test" depends="retrieve,dist">
 				<echo message="Compilation des fichiers Tests java"/>
 				<javac srcdir="${test.dir}"
 						debug="on"
 						includeantruntime="false"
 						deprecation="on"
-						destdir="${bin.dir}"
+						destdir="${bin.dir}/"
 						classpathref="classpath.test"
 						target="8"
 						source="8"/>
