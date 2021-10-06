@@ -4,7 +4,6 @@ before_script:
   - git clone https://git-wip-us.apache.org/repos/asf/ant-ivy.git
   - cd ant-ivy
   - ant jar
-  - mkdir /usr/share/ant/lib
   - cp ./build/artifact/jars/ivy.jar /usr/share/ant/lib/
   - cd ../
 stages:        # List of stages for jobs, and their order of execution
