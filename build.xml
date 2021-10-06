@@ -5,13 +5,13 @@
 			basedir="."
 			xmlns:ivy="antlib:org.apache.ivy.ant">
 	<!-- déclaration des variables -->
-	<property name="src.dir" value="${basedir}/src"/>
-	<property name="test.dir" value="${basedir}/test"/>
-	<property name="doc.dir" value="${basedir}/doc"/>
-	<property name="bin.dir" value="${basedir}/bin"/>
-	<property name="lib.dir" value="${basedir}/lib"/>
+	<property name="src.dir" value="src"/>
+	<property name="test.dir" value="test"/>
+	<property name="doc.dir" value="doc"/>
+	<property name="bin.dir" value="bin"/>
+	<property name="lib.dir" value="lib"/>
 	<property name="main-class" value="fr.ubo.tetris.Tetris"/>
-	<property name="compile.classpath" value="${basedir}/lib/commons-lang3-3.5.jar"/>
+	<property name="compile.classpath" value="${lib.dir}/commons-lang3-3.5.jar"/>
 	<property name="version" value="1.69"/>
 	<property name="test.results.dir" value="${bin.dir}/test-results/"/>
 	<property name="test.reports.dir" value="${bin.dir}/test-reports/"/>
