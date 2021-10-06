@@ -4,13 +4,12 @@ stages:        # List of stages for jobs, and their order of execution
   - test
   - run
 
-  ant-install-job:
-    stage: .pre
-    script:
-      - apt-get update
-      - apt-get -y install ant
-
-
+ant-install-job:
+  stage: .pre
+  script:
+    - apt-get update
+    - apt-get -y install ant
+    
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
   script:
