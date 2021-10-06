@@ -1,4 +1,12 @@
-before_script:
+stages:        # List of stages for jobs, and their order of execution
+  - .pre
+  - build
+  - test
+  - run
+
+installation-job:
+  stage: .pre
+  script:
   - apt-get update
   - apt-get -y install ant
   - git clone https://git-wip-us.apache.org/repos/asf/ant-ivy.git
@@ -6,11 +14,7 @@ before_script:
   - ant jar
   - cp ./build/artifact/jars/ivy.jar /usr/share/ant/lib/
   - cd ../
-stages:        # List of stages for jobs, and their order of execution
-  - .pre
-  - build
-  - test
-  - run
+
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build

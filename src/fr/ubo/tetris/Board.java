@@ -18,8 +18,8 @@ import javax.swing.Timer;
  * Package : fr.isen.tetris <br/>
  * Nom : Tetris <br/>
  * 
- * Description : Classe représentant une forme géométrique <br/>
- * Possède une liste finie définie dans l'énumération imbriquée Tetrominoes
+ * Description : Classe representant une forme geometrique <br/>
+ * Possede une liste finie definie dans l'enumeration imbriquee Tetrominoes
  * 
  * @author BOUJELLABA Aymane
  */
