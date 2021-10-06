@@ -1,54 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project name="Compilation de Tetris"
-			default="all" 
+			default="dist" 
 			basedir="."
 			xmlns:ivy="antlib:org.apache.ivy.ant">
-	<!-- déclaration des variables -->
-	<property name="src.dir"  value="${basedir}/src"/>
-	<property name="test.dir" value="${basedir}/test"/>
-	<property name="doc.dir"  value="${basedir}/doc"/>
-	<property name="bin.dir"  value="${basedir}/bin"/>
-	<property name="lib.dir"  value="${basedir}/lib"/>
-	<property name="main-class" value="fr.ubo.tetris.Tetris"/>
-	<property name="compile.classpath" value="${lib.dir}/commons-lang3-3.5.jar"/>
-	<property name="version" value="1.69"/>
-	<property name="test.results.dir" value="${bin.dir}/test-results/"/>
-	<property name="test.reports.dir" value="${bin.dir}/test-reports/"/>
-	
-	
-	<!-- Déclaration du classpath -->
-	<path id = "classpath.base"/>
-	<path id = "classpath.test">
-		<pathelement location = "${lib.dir}/junit-4.12.jar" />
-		<pathelement location = "${lib.dir}/hamcrest-core-1.3" />
-		<pathelement location = "${test.dir}" />
-		<pathelement location = "${src.dir}" />
-		<pathelement location = "${bin.dir}" />
-		<path refid = "classpath.base" />
-   </path>
-	
-	
-	<!-- retrieve target, tâche qui permet de récupérer les dépendences d'après ivy-->
+
 	<target name="retrieve">
-			<ivy:retrieve sync="true" type="jar" />
+		    <ivy:retrieve sync="true" type="jar" />
 			<ivy:settings />
 			<ivy:resolve />
 	</target>
+		
+	<property name="src.dir" value="${basedir}/src"/>
+	<property name="bin.dir" value="${basedir}/bin"/>
+	<property name="lib.dir" value="${basedir}/lib"/>
+	<property name="test.dir" value="${basedir}/test" />
+
+	<property name="report.dir" value="${basedir}/test-reports" />
+	<property name="doc.dir" value="${basedir}/javadoc" />
+		
+		
+	<property name="main-class" value="fr.ubo.tetris.Tetris"/>
+	<property name="compile.classpath" value="${basedir}/lib/commons-lang3-3.5.jar"/>
 	
-	
-	<!-- clean target, tâche qui s'occupe de supprimer les fichiers issue des compilation ancienne-->
+	<property name="version" value="1.69"/>
+
+	<path id = "classpath.base" />
+		<path id = "classpath.test">
+			<pathelement location = "lib/junit-4.12.jar" />
+			<pathelement location = "lib/hamcrest-core-1.3" />
+			<pathelement location = "${test.dir}" />
+			<pathelement location = "${src.dir}" />
+			<pathelement location = "${bin.dir}" />
+			<path refid = "classpath.base" />
+	   </path>
 	<target name="clean">
 		<echo message="Suppression des fichiers issue de la compilation"/>
 		<delete dir="${bin.dir}"/>
-		<delete dir="${lib.dir}"/>
-		<mkdir dir="${bin.dir}"/>
-		<mkdir dir="${lib.dir}"/>
+		<delete dir="${lib.dir}" />
+		
+		<mkdir dir="${bin.dir}" />
+		<mkdir dir="${lib.dir}" />
+		
 	</target>
-	
-	<!-- compile target, tâche qui compile les fichier .java et les mettre dans le dossier bin -->
+
 	<target name="compile" depends="retrieve">
 		<echo message="Compilation des fichiers java"/>
+		
 		<javac srcdir="${src.dir}"
 				debug="on"
 				includeantruntime="false"
@@ -59,83 +57,75 @@
 				source="8"
 		/>
 	</target>
+	<target name="compile-test" depends="retrieve">
+			<echo message="Compilation des fichiers java"/>
+			
+			<javac srcdir="${test.dir}"
+					debug="on"
+					includeantruntime="false"
+					deprecation="on"
+					destdir="${bin.dir}"
+					classpathref="classpath.test"
+					target="8"
+					source="8"/>
+	</target>
 	
-	<!-- dist target, tâche qui compress les fichiers .class compilé en un jar exécutable -->
+	<target name="test" depends="compile-test">
+			<delete dir="${bin.dir}/test-results/" />		
+			<mkdir dir="${bin.dir}/test-results/"/>
+			<junit>	
+				<classpath refid = "classpath.test" />
+				<test name="fr.ubo.tetris.TestShape" haltonfailure="no" todir="${bin.dir}/test-results/">
+					<formatter type="xml" />
+					<formatter type="plain"/>
+				</test>
+			 </junit>
+		</target>
+	
+	<target name= "test-reports" depends ="test">
+		
+		<delete dir="${report.dir}"/>
+		<mkdir dir="${report.dir}"/>
+		
+		<junitreport todir="${report.dir}">
+		    <fileset dir="${bin.dir}/test-results/">
+		        <include name="TEST-*.xml"/>
+		    </fileset>
+		    <report format="noframes" todir="${report.dir}/html"/>
+		</junitreport>
+	</target>
+	
+	<target name = "javadoc">
+		  <delete dir = "${doc.dir}" />
+	      <mkdir dir="${doc.dir}"/>
+		
+	      <javadoc packagenames="fr.ubo.*" sourcepath="${src.dir}" 
+	            destdir = "${doc.dir}" version = "true" windowtitle = "Documentation" classpath="${compile.classpath}">
+	         <doctitle><![CDATA[= Documentation =]]></doctitle>
+	             <bottom>
+	                <![CDATA[Copyright ©️ 2021. All Rights Reserved.]]>
+	             </bottom>
+	             <group title = "documentation" packages = "fr.ubo.*"/>
+	      </javadoc>
+	      <echo message = "java doc has been generated!" />
+	</target>
+	
+	<target name= "all" depends = "dist,test-reports,javadoc">
+		<echo message="all is good" />
+	</target>
+
 	<target name="dist" depends="clean,compile">
 		<echo message="Compression sous form d'un fichier .JAR"/>
 		<jar jarfile="${lib.dir}/Tetris.jar" basedir="${bin.dir}">
 			<manifest>
-				<attribute name="Built-By" value="BOUJELLABA Aymane"/>
+				<attribute name="Built-By" value="AKKAR Ferdaous"/>
 				<attribute name="Implementation-Version" value="1.69"/>
 				<attribute name="Main-Class" value="${main-class}"/>
 				<attribute name="Class-Path" value="commons-lang3-3.5.jar"/>
 			</manifest>
 		</jar>
 	</target>
-	
-	<!-- compiler les fichier test -->
-	<target name="compile-test" depends="retrieve">
-				<echo message="Compilation des fichiers Tests java"/>
-				<javac srcdir="${test.dir}"
-						debug="on"
-						includeantruntime="false"
-						deprecation="on"
-						destdir="${bin.dir}"
-						classpathref="classpath.test"
-						target="8"
-						source="8"/>
-	</target>
-	
-	<!-- lancer les test-Junit -->
-	<target name="test-JUnit" depends="compile-test">
-		<echo message="Lancer les Junit Tests"/>
-		<mkdir dir="${test.results.dir}" />
-		<junit printsummary="yes" haltonfailure="no" showoutput="yes">	
-			<classpath refid = "classpath.test" />
-			<test name="fr.ubo.tetris.test.TestShape" haltonfailure="no" todir="${test.results.dir}">
-				<formatter type="xml" />
-				<formatter type="plain"/>
-			</test>
-		 </junit>
-	</target>
 
-	<!-- Création d'un rapport sous format html -->
-	<target name="test-reports" depends="test-JUnit">
-		<echo message="Génération des rapports des Test Junits"/>
-		<mkdir dir="${test.reports.dir}" />
-        <mkdir dir="${test.reports.dir}/html" />
-		<junitreport todir="${test.reports.dir}">
-            <fileset dir="${test.results.dir}">
-                <include name="TEST-*.xml" />
-            </fileset>
-            <report format="noframes" todir="${test.reports.dir}/html" />
-        </junitreport>
-    </target>
-
-	<!-- JavaDoc tâche -->
-	<target name="javadoc">
-		<echo message="Génération de la documentation"/>
-		<delete dir="${doc.dir}"/>
-		<mkdir dir="${doc.dir}" />
-		<javadoc packagenames="fr.ubo.tetris.*"
-					sourcepath="${src.dir}" 
-					destdir = "${doc.dir}"
-					version = "true" 
-					windowtitle = "Tetris application"
-					classpath="${compile.classpath}">
-			<doctitle><![CDATA[= Tetris Application =]]></doctitle>
-			<bottom>
-				<![CDATA[Copyright © 2021. All Rights Reserved.]]>
-			</bottom>
-			<group title = "Tetris packages" packages = "fr.ubo.tetris.*"/>
-		</javadoc>
-	</target>
-	
-	
-	<target name="all" depends="dist,test-reports,javadoc">
-	</target>
-	
-	
 	<!--#java.exe -cp '../lib/commons-lang3-3.5.jar;Tetris.jar' fr.ubo.tetris.Tetris-->
 	<target name="run" depends="dist">
 		<java classpath="${compile.classpath};${lib.dir}/Tetris.jar"
