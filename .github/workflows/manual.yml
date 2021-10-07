@@ -1,4 +1,4 @@
-name: Java CI
+name: Building and running test using Self Hosted runner and github
 
 on: [push]
 
@@ -14,17 +14,15 @@ jobs:
           distribution: 'adopt'
       - name: Build with Ant
         run: ant dist
-
   test:
     runs-on: self-hosted
     needs: [build]
     steps:
       - name: Running JUnit Tests & Generating reports
       - run: ant test-reports
-
+  
   docs:
     runs-on: self-hosted
     steps:
       - name: Generating documentation
       - run: ant javadoc
-      
