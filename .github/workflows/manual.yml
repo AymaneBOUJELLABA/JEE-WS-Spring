@@ -14,13 +14,12 @@ jobs:
           distribution: 'adopt'
       - name: Build with Ant
         run: ant dist
-
   test:
     runs-on: self-hosted
     needs: [build]
     steps:
       - name: Running JUnit Tests & Generating reports
-      - run: ant test-reports
+        run: ant test-reports
   
   docs:
     runs-on: self-hosted
