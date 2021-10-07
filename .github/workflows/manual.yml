@@ -14,4 +14,17 @@ jobs:
           java-version: '8'
           distribution: 'adopt'
       - name: Build with Ant
-        run: ant -noinput -buildfile build.xml
+        run: ant dist
+
+  test:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@2
+      - name: Set up JDK 8
+        uses: actions/setup-java@2
+        with:
+          java-version: '8'
+          distrubution: 'adopt'
+      - name: Testing with Ant and generating reports
+        run: ant test-reports
