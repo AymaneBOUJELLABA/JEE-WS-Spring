@@ -14,6 +14,7 @@ jobs:
           distribution: 'adopt'
       - name: Build with Ant
         run: ant dist
+
   test:
     runs-on: self-hosted
     needs: [build]
@@ -25,4 +26,4 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Generating documentation
-      - run: ant javadoc
+        run: ant javadoc
