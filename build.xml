@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="Compilation de Tetris With Jenkins & ngrok"
+<project name="Compilation de Tetris avec Jenkins et ngrok"
 			default="all" 
 			basedir="."
 			xmlns:ivy="antlib:org.apache.ivy.ant">
